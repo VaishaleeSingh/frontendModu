@@ -103,7 +103,7 @@ function App() {
 
   useEffect(() => {
     // Initialize socket connection
-    const newSocket = io('https://servermodu1.onrender.com');
+    const newSocket = io('http://localhost:5000');
     setSocket(newSocket);
 
     newSocket.on('connect', () => {
